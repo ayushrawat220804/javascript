@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit</title>
+    <script>
+        function findgreatest() {
+            // Get values from input fields and convert them into integers
+            // If we don't use parseInt, inputs are strings → e.g. "10" + "20" = "1020"
+            // With parseInt, "10" and "20" become numbers → 10 + 20 = 30
+            let num1 = parseInt(document.getElementById("1").value);
+            let num2 = parseInt(document.getElementById("2").value);
+            let num3 = parseInt(document.getElementById("3").value);
+            
+            let result; // variable to store the greatest number
+
+            // Compare numbers to find the greatest one
+            if (num1 >= num2 && num1 >= num3) {
+                result = num1;
+            }
+            else if (num2 >= num1 && num2 >= num3) {
+                result = num2;
+            }
+            else {
+                result = num3;
+            }
+
+            // Show the result in an alert box
+            alert("The Greatest Number Among num1, num2 and num3 is : " + result)
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <!-- Input for first number -->
+        <label for="num1">Enter First Number : </label>
+        <input type="number" id=1 required placeholder="eg : 10"> <br>
+
+        <!-- Input for second number -->
+        <label for="num2">Enter Second Number : </label>
+        <input type="number" id=2 required placeholder="eg : 20"> <br>
+
+        <!-- Input for third number -->
+        <label for="num3">Enter Third Number : </label>
+        <input type="number" id=3 required placeholder="eg : 30"> <br> <br>
+
+        <!-- Button to trigger the function -->
+        <!-- NOTE: By default, button inside form tries to submit the form -->
+        <!-- Here, onclick calls the findgreatest() function instead -->
+        <button onclick="findgreatest()">Result</button>
+    </form>
+</body>
+
+</html>
