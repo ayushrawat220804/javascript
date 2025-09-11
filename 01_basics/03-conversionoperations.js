@@ -93,3 +93,5 @@ console.log(typeof somenumer) // here it gives number
 let stringnumber = String(somenumer) // here we are converting number to string using String() function
 console.log(typeof stringnumber) // here it gives string
 console.log(stringnumber) // here it gives "223"
+
+
