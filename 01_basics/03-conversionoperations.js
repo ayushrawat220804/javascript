@@ -95,3 +95,91 @@ console.log(typeof stringnumber) // here it gives string
 console.log(stringnumber) // here it gives "223"
 
 
+console.log("")
+console.log("")
+// operations in javascript
+let value = 3;
+console.log(value) // here it gives 3
+let negvalue = -value; // here we are using - operator to convert positive number to negative number 
+
+console.log(2+1) // here it gives 3
+console.log(2-1) // here it gives 1
+console.log(2*3) // here it gives 6
+console.log(6/3) // here it gives 2
+console.log(7%3) // here it gives 1 , this is modulus operator , it gives remainder of the division
+console.log(2**3) // here it gives 8 , this is exponentiation operator , it gives 2 to the power 3
+
+let str1 = "hello"
+let str2 = "world"
+console.log(str1 + str2) // here it gives helloworld , this is string concatenation operator
+
+let str3 = "hello "
+let str4 = "world"
+console.log(str3 + str4) // here it gives hello world , this is string concatenation operator
+
+let str5 = "hello "
+let str6 = 5
+console.log(str5 + str6) // here it gives hello 5 , this is string concatenation operator , here 5 is converted to string and then concatenated
+
+console.log("1"+2) // here it gives 12 , here 2 is converted to string and then concatenated
+console.log("1"-2) // here it gives -1 , here "1" is converted to number and then subtraction is done
+console.log("1"*2) // here it gives 2 , here "1" is converted to number and then multiplication is done
+console.log("1"/2) // here it gives 0.5 , here "1" is converted to number and then division is done
+console.log(1+2+"2") // here it gives 32 , here 1+2 is done first and then 3 is converted to string and then concatenated
+console.log("1"+2+2) // here it gives 122 , here "1"+2 is done first and then 12+2 is done and then 122 is converted to string and then concatenated
+console.log("1"-"2") // here it gives -1 , here both "1" and "2" are converted to number and then subtraction is done
+console.log("1"*2) // here it gives 2 , here "1" is converted to number and then multiplication is done
+console.log("1"/"2") // here it gives 0.5 , here both "1" and "2" are converted to number and then division is done
+console.log("1a"-"2") // here it gives NaN , here "1a" cannot be converted to number and then subtraction is done
+console.log("1a"+2) // here it gives 1a2 , here 2 is converted to string and then concatenated
+console.log(true + true) // here it gives 2 , here both true are converted to 1 and then addition is done
+console.log(true + false) // here it gives 1 , here true is converted to 1 and false is converted to 0 and then addition is done
+console.log(false + false) // here it gives 0 , here both false are converted to 0 and then addition is done
+console.log(true - false) // here it gives 1 , here true is converted to 1 and false is converted to 0 and then subtraction is done
+console.log(false - true) // here it gives -1 , here false is converted to 0 and true is converted to 1 and then subtraction is done
+console.log(true * false) // here it gives 0 , here true is converted to 1 and false is converted to 0 and then multiplication is done
+console.log(true * true) // here it gives 1 , here both true are converted to 1 and then multiplication is done
+console.log(false * false) // here it gives 0 , here both false are converted to 0 and then multiplication is done
+console.log(true / false) // here it gives Infinity , here true is converted to 1 and false is converted to 0 and then division is done
+console.log(false / true) // here it gives 0 , here false is converted to 0 and true is converted to 1 and then division is done
+console.log(false / false) // here it gives NaN , here both false are converted to 0 and then division is done
+console.log("hello" + true) // here it gives hellotrue , here true is converted to string and then concatenated
+console.log("hello" - true) // here it gives NaN , here "hello" cannot be converted to number and then subtraction is done
+console.log("hello" * true) // here it gives NaN , here "hello" cannot be converted to number and then multiplication is done
+console.log("hello" / true) // here it gives NaN , here "hello" cannot be converted to number and then division is done
+console.log("5" + true) // here it gives 5true , here true is converted to string and then concatenated
+console.log("5" - true) // here it gives 4 , here "5" is converted to number and true is converted to 1 and then subtraction is done
+console.log("5" * true) // here it gives 5 , here "5" is converted to number and true is converted to 1 and then multiplication is done
+console.log("5" / true) // here it gives 5 , here "5" is converted to number and true is converted to 1 and then division is done
+console.log("5" + false) // here it gives 5false , here false is converted to string and then concatenated
+console.log("5" - false) // here it gives 5 , here "5" is converted to number and false is converted to 0 and then subtraction is done
+console.log("5" * false) // here it gives 0 , here "5" is converted to number and false is converted to 0 and then multiplication is done
+console.log("5" / false) // here it gives Infinity , here "5" is converted to number and false is converted to 0 and then division is done
+console.log("hello" + 5) // here it gives hello5 , here 5 is converted to string and then concatenated
+console.log("hello" - 5) // here it gives NaN , here "hello" cannot be converted to number and then subtraction is done
+console.log("hello" * 5) // here it gives NaN , here "hello" cannot be converted to number and then multiplication is done
+console.log("hello" / 5) // here it gives NaN , here "hello" cannot be converted to number and then division is done
+console.log("5" + 5) // here it gives 55 , here 5 is converted to string and then concatenated
+console.log("5" - 5) // here it gives 0 , here "5" is converted to number and then subtraction is done
+console.log("5" * 5) // here it gives 25 , here "5" is converted to number and then multiplication is done
+console.log("5" / 5) // here it gives 1 , here "5" is converted to number and then division is done
+
+console.log("")
+console.log("")
+// Increment and Decrement Operators
+let num = 5;
+console.log(num) // here it gives 5
+num++; // here we are using ++ operator to increment the value of num by 1
+console.log(num) // here it gives 6
+num--; // here we are using -- operator to decrement the value of num by 1
+console.log(num) // here it gives 5
+
+let newnum = 5;
+console.log(newnum) // here it gives 5
+console.log(newnum++) // here it gives 5 , because here the value of newnum is printed first and then incremented
+console.log(newnum) // here it gives 6 , because here the value of newnum is incremented
+
+let newernum = 5;
+console.log(newernum) // here it gives 5
+console.log(++newernum) // here it gives 6 , because here the value of newnum is incremented first and then printed
+console.log(newernum) // here it gives 6 , because here the value of newnum is already incremented
