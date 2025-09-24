@@ -83,3 +83,35 @@ console.log(typeof greet) // function
 // null vs undefined
 // null is an assignment value, it can be assigned to a variable to represent no value
 // undefined means a variable has been declared but has not yet been assigned a value
+
+
+    //  VIDEO
+// stacks and heaps in java script
+let myyoutubename = "hiteshchaudharydotcom" //  stack primitive
+let anothername = myyoutubename
+console.log(myyoutubename)
+console.log(anothername)
+
+let userOne = {  //  heap nonprimitive
+    name: "hitesh", 
+    age: 22  , 
+    email : "ayushrawat22080@gmail.com", // same reference
+    upi : "asdf@upi"
+}
+
+let usertwo = userOne
+usertwo.email = "ayushrawat234@gmail.com"
+
+console.log(userOne)
+console.log()
+
+console.log(userOne.email)
+console.log(usertwo.email)
+
+// inshort stack me primitive data types store hote hai and heap me nonprimitive data types store hote hai
+// stack me data directly store hota hai and heap me data ka reference store hota hai
+// stack me data fast access hota hai and heap me data slow access hota hai
+// stack me memory size limited hota hai and heap me memory size unlimited hota hai
+// stack me memory automatically manage hota hai and heap me memory manually manage karna padta hai (garbage collection)
+// stack me data immutable hota hai and heap me data mutable hota hai
+// stack me data call by value hota hai and heap me data call by reference hota hai

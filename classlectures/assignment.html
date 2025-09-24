@@ -1,0 +1,32 @@
+<!-- in a company an employee gets a basic salary according to the following rules , if basic salary more than rs 10000, he get hra 10% of basic salary and ea 30% of basic salary otherwise he gets hra rs 5000, and da 30% of basic salary, design html form and write js code to find gross slalary of an employee get  -->
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Gross Salary Calculator</title>
+    <script>
+        function calculateSalary() {
+            var basic = parseFloat(document.getElementById("basic").value);
+            var hra, ea, da, gross;
+
+            if (basic > 10000) {
+                hra = 0.10 * basic;
+                ea = 0.30 * basic;
+                gross = basic + hra + ea;
+                alert("Gross Salary = " + gross + "\n(HRA: " + hra + ", EA: " + ea + ")");
+            } else {
+                hra = 5000;
+                da = 0.30 * basic;
+                gross = basic + hra + da;
+                alert("Gross Salary = " + gross + "\n(HRA: " + hra + ", DA: " + da + ")");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Employee Gross Salary</h2>
+    <form>
+        Enter Basic Salary: <input type="number" id="basic"><br><br>
+        <input type="button" value="Calculate" onclick="calculateSalary()">
+    </form>
+</body>
+</html>
